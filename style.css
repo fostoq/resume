@@ -34,8 +34,10 @@
     height: 200px;
     border-radius: 50%;
     position:absolute;
-    top: 50px;
-    left: 78px;
+    top: 6vh;
+    left: 10.5vh;
+    /* top: 16%; 
+    left: 7%; */
     border: 5px solid white;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
