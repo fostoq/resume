@@ -1,0 +1,410 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth; 
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{display: none;}
+
+
+}
+
+.print {
+    width: 80%;
+    margin: 20px auto;
+
+}
+
+.print .header{
+
+        width: 100%;
+        height: 150px;
+        background-color: #873d8d;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+}
+
+.header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position:absolute;
+    top: 50px;
+    left: 78px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+    background-color: white;
+}
+
+.header img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.print .header .header-text{
+    color: white;
+    width: 60%;
+    margin-left: auto;
+}
+
+.print .header .header-text h1{
+
+    font-size: 80px;
+    font-weight: normal;
+
+}
+
+.print .header .header-text p{
+    font-size: 20px;
+    color: black;
+    font-weight: 80%;
+    font-weight: bold;
+}
+
+.print .content{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.print .content .left {
+    flex: 0.3;
+    background-color: #a86fac;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.print .content .left .contact {
+        margin-top: 130px;
+        padding: 0 30px;
+}
+
+.print .content .left .contact h4{ 
+
+    font-size: 35px;
+    font-weight: normal;
+    margin: 20px 0;
+
+}
+
+.print .content .left .contact h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.print .content .left .contact p{
+    font-size: 17px;
+
+}
+
+
+.print .content .left .skills{
+    margin-top: 30px;
+
+}
+
+.print .content .left .skills h1 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.print .content .left .skills .bars{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    margin: 30px 0;
+    padding: 0 30px;
+}
+
+
+.print .content .left .skills .bars .bar p {
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.print .content .left .skills .bars .bar span1 { 
+
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span1::before { 
+
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 100%;
+    background-color: rgb(82, 78, 78);
+    top: 0%;
+    left: 0px;
+    border-radius: 10px;
+}
+
+
+.print .content .left .skills .bars .bar span2 { 
+
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span2::before { 
+
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color:rgb(82, 78, 78);
+    top: 0%;
+    left: 0px;
+    border-radius: 10px;
+}
+
+.print .content .left .skills .bars .bar span3 { 
+
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span3::before { 
+
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 100%;
+    background-color:rgb(82, 78, 78);
+    top: 0%;
+    left: 0px;
+    border-radius: 10px;
+}
+
+
+
+.print .content .left .skills .bars .bar span4 { 
+
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span4::before { 
+
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 100%;
+    background-color: rgb(82, 78, 78);
+    top: 0%;
+    left: 0px;
+    border-radius: 10px;
+}
+
+.print .content .left .skills .bars .bar span5 { 
+
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span5::before { 
+
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 100%;
+    background-color: rgb(82, 78, 78);
+    top: 0%;
+    left: 0px;
+    border-radius: 10px;
+}
+
+.print .content .left .skills .bars .bar span6 { 
+
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span6::before { 
+
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 100%;
+    background-color: rgb(82, 78, 78);
+    top: 0%;
+    left: 0px;
+    /* --transform: translate(-50%); */
+    border-radius: 10px;
+}
+
+.print .content .left .abilities h1 {
+
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+
+}
+
+.print .content .left .abilities h4 {
+
+    margin: 10px 0;
+    font-size: 18px;
+
+}
+
+.print .content .left .abilities p {
+
+    font-size: 15px;
+    margin: 0 20px;
+
+}
+
+
+
+.print .content .right {
+    flex: 0.7;
+    padding: 50px;
+}
+
+.print .content .right  h1{
+
+    font-size: 35px;
+    font-weight: normal;
+    margin: 20px 5px;
+}
+
+.print .content .right .about  h1{
+
+    /* font-size: 35px;
+    font-weight: normal; */
+    margin: 20px 0px 0px 0px;
+}
+
+.print .content .right span{
+
+    font-size: 40px;
+    margin-right: 20px;
+    color: gray;
+
+}
+
+.print .content .right p {
+
+    padding-left: 70px;
+    text-align: justify;
+    /* word-break: break-all; */
+    font-size: 17px;
+    color: gray;
+    margin-top: 10px;
+
+}
+
+
+
+.print .content .right .work .group {
+    position: relative;
+}
+
+.group {
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.print .content .right .work .group h3 {
+
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 70px;
+
+}
+
+.print .content .right .work .group h4 {
+
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 70px;
+    color: gray;
+
+}
+
+.print .content .right .work .group span{
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 5px;
+
+}
+
+.print .content .right .education{
+    margin-top: 30;
+}
+
+.print .content .right .education .edu-group {
+    position: relative;
+}
+
+
+.print .content .right .education .edu-group h4{
+    padding-left: 70px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.print .content .right .education .edu-group span{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.print .content .right .education .edu-group p { 
+
+    padding-left: 70px;
+    font-size: 16px;
+}
