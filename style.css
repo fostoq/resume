@@ -9,8 +9,15 @@
     scrollbar-width: none;
     &::-webkit-scrollbar{display: none;}
 
-
 }
+
+body {
+    background-image: url("./pics/flower.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
 
 .print {
     width: 80%;
@@ -53,6 +60,7 @@
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 }
 
+
 .print .header .header-text{
     color: white;
     width: 60%;
@@ -63,6 +71,7 @@
 
     font-size: 80px;
     font-weight: normal;
+
 
 }
 
@@ -306,6 +315,7 @@
 .print .content .right {
     flex: 0.7;
     padding: 50px;
+    background-color: white;
 }
 
 .print .content .right  h1{
@@ -410,3 +420,280 @@
     padding-left: 70px;
     font-size: 16px;
 }
+
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 600px) {
+    /* Adjust styles for small screens */
+    .print {
+      width: 90%;
+    }
+
+    .header img {
+        width: 17%;
+        height: 70%;
+        left: 6%;
+        top: 45%;
+    }
+
+    .print .header {
+        height: 20%;
+    }
+
+    .print .header .header-text{
+        width: 70%;
+        margin-top: 10%;
+        margin-bottom: 2%;
+        /* //margin-left: auto; */
+    }
+    
+    .print .header .header-text h1{
+    
+        font-size: 20px;
+        top: 25%;
+        font-weight: normal;
+    
+    
+    }
+    
+    .print .header .header-text p{
+        font-size: 8px;
+        color: black;
+        font-weight: 80%;
+        font-weight: bold;
+    }
+
+  
+    .print .content .left {
+        width: 30%;
+        background-color: #a86fac;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .print .content .left .contact {
+            margin-top: 20%;
+            padding: 0 10px;
+    }
+
+    .print .content .left .contact h4{ 
+
+        font-size: 15px;
+        font-weight: normal;
+        margin: 15px 0;
+
+    }
+
+       
+    .print .content .left .contact h5{
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .print .content .left .contact p{
+        font-size: 10px;
+
+    }
+
+
+    .print .content .left .skills{
+        margin-top: 20%;
+        padding: 0 10px;
+
+    }
+
+    .print .content .left .skills h1 {
+        font-size: 15px;
+        font-weight: normal;
+        margin: 15px 0;
+
+    }
+
+    .print .content .left .skills .bars{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px 20px;
+        margin: 10px 0;
+        padding: 0 0px;
+    }
+
+
+    .print .content .left .skills .bars .bar p {
+
+        font-size: 9px;
+        font-weight: bold;
+        margin-right: 20%;
+    }
+
+    .print .content .left .skills .bars .bar span1 { 
+
+        display: block;
+        width: 150%;
+        height: 5px;
+        background-color: lightgray;
+        margin-top: 5px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .bar span1::before { 
+    
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 100%;
+        background-color: rgb(82, 78, 78);
+        top: 0%;
+        left: 0px;
+        border-radius: 10px;
+    }
+    
+    
+    .print .content .left .skills .bars .bar span2 { 
+    
+        display: block;
+        width: 80%;
+        height: 5px;
+        background-color: lightgray;
+        margin-top: 5px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .bar span2::before { 
+    
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 100%;
+        background-color:rgb(82, 78, 78);
+        top: 0%;
+        left: 0px;
+        border-radius: 10px;
+    }
+    
+    .print .content .left .skills .bars .bar span3 { 
+    
+        display: block;
+        width: 150%;
+        height: 5px;
+        background-color: lightgray;
+        margin-top: 5px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .bar span3::before { 
+    
+        position: absolute;
+        content: "";
+        width: 60%;
+        height: 100%;
+        background-color:rgb(82, 78, 78);
+        top: 0%;
+        left: 0px;
+        border-radius: 10px;
+    }
+    
+    
+    
+    .print .content .left .skills .bars .bar span4 { 
+    
+        display: block;
+        width: 80%;
+        height: 5px;
+        background-color: lightgray;
+        margin-top: 5px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .bar span4::before { 
+    
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: 100%;
+        background-color: rgb(82, 78, 78);
+        top: 0%;
+        left: 0px;
+        border-radius: 10px;
+    }
+    
+    .print .content .left .skills .bars .bar span5 { 
+    
+        display: block;
+        width: 150%;
+        height: 5px;
+        background-color: lightgray;
+        margin-top: 5px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .bar span5::before { 
+    
+        position: absolute;
+        content: "";
+        width: 90%;
+        height: 100%;
+        background-color: rgb(82, 78, 78);
+        top: 0%;
+        left: 0px;
+        border-radius: 10px;
+    }
+    
+    .print .content .left .skills .bars .bar span6 { 
+    
+        display: block;
+        width: 80%;
+        height: 5px;
+        background-color: lightgray;
+        margin-top: 5px;
+        border-radius: 10px;
+        position: relative;
+        align-items: center;
+    }
+    
+    .bar span6::before { 
+    
+        position: absolute;
+        content: "";
+        width: 30%;
+        height: 100%;
+        background-color: rgb(82, 78, 78);
+        top: 0%;
+        left: 0px;
+        /* --transform: translate(-50%); */
+        border-radius: 10px;
+    }
+
+    .print .content .left .abilities h1 {
+
+        font-size: 15px;
+        font-weight: normal;
+        margin: 20px 0;
+    
+    }
+    
+    .print .content .left .abilities h4 {
+    
+        font-size: 12px;
+        margin: 5px 0;
+    
+    }
+    
+    .print .content .left .abilities p {
+    
+        font-size: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5px 0;
+
+    }
+    
+    
+
+
+  }
+  
