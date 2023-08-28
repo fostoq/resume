@@ -4,5 +4,5 @@ This is a personal resume website project created using HTML, CSS, and JavaScrip
 
 ## Live Demo :D
 
-You can view the live demo of the resume website at [https://fostoq.github.io/resume]
+You can view the live demo of the resume website at https://fostoq.github.io/resume
 
