@@ -42,10 +42,6 @@ body {
     height: 200px;
     border-radius: 50%;
     position:  relative;
-    /* top: 4vh;
-    left: 12.5vh; */
-    /* top: 16%; 
-    left: 7%; */
     border: 5px solid white;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -96,13 +92,13 @@ body {
 
 .print .content .left {
     flex: 0.3;
-    background-color: #a86fac;
+    background-color: #926295;
     text-align: center;
     padding-bottom: 20px;
 }
 
 .print .content .left .contact {
-        margin-top: 130px;
+        margin-top: 130px; 
         padding: 0 30px;
 }
 
@@ -288,7 +284,6 @@ body {
     background-color: rgb(82, 78, 78);
     top: 0%;
     left: 0px;
-    /* --transform: translate(-50%); */
     border-radius: 10px;
 }
 
@@ -315,6 +310,12 @@ body {
 
 }
 
+.print .content .left .abilities a{
+    text-decoration: none;
+    color: black;
+
+}
+
 
 
 .print .content .right {
@@ -332,8 +333,6 @@ body {
 
 .print .content .right .about  h1{
 
-    /* font-size: 35px;
-    font-weight: normal; */
     margin: 20px 0px 0px 0px;
 }
 
@@ -349,7 +348,6 @@ body {
 
     padding-left: 70px;
     text-align: justify;
-    /* word-break: break-all; */
     font-size: 17px;
     color: gray;
     margin-top: 10px;
@@ -360,6 +358,13 @@ body {
 
 .print .content .right .work .group {
     position: relative;
+}
+
+.print .content .right .about a { 
+
+    text-decoration: none;
+    color: black;
+
 }
 
 .group {
@@ -429,7 +434,6 @@ body {
 
 /* Media queries for different screen sizes */
 @media screen and (max-width: 600px) {
-    /* Adjust styles for small screens */
     .print {
       width: 90%;
     }
@@ -439,6 +443,7 @@ body {
         height: 70%;
         left: 6%;
         top: 45%;
+        display: none;
     }
 
     .print .header {
@@ -449,12 +454,12 @@ body {
         width: 70%;
         margin-top: 10%;
         margin-bottom: 2%;
-        /* //margin-left: auto; */
+        margin-left: 34px; 
     }
     
     .print .header .header-text h1{
     
-        font-size: 20px;
+        font-size: 30px;
         top: 25%;
         font-weight: normal;
     
@@ -462,7 +467,7 @@ body {
     }
     
     .print .header .header-text p{
-        font-size: 8px;
+        font-size: 18px;
         color: black;
         font-weight: 80%;
         font-weight: bold;
@@ -470,7 +475,8 @@ body {
 
   
     .print .content .left {
-        width: 30%;
+        width: 0%;
+        flex: 0.1;
         background-color: #a86fac;
         text-align: center;
         padding-bottom: 20px;
@@ -479,6 +485,7 @@ body {
     .print .content .left .contact {
             margin-top: 20%;
             padding: 0 10px;
+            display: none;
     }
 
     .print .content .left .contact h4{ 
@@ -486,6 +493,7 @@ body {
         font-size: 15px;
         font-weight: normal;
         margin: 15px 0;
+        display: none;
 
     }
 
@@ -493,10 +501,12 @@ body {
     .print .content .left .contact h5{
         font-size: 12px;
         margin: 5px 0;
+        display: none;
     }
 
     .print .content .left .contact p{
         font-size: 10px;
+        display: none;
 
     }
 
@@ -504,6 +514,8 @@ body {
     .print .content .left .skills{
         margin-top: 20%;
         padding: 0 10px;
+        display: none;
+
 
     }
 
@@ -511,6 +523,8 @@ body {
         font-size: 15px;
         font-weight: normal;
         margin: 15px 0;
+        display: none;
+
 
     }
 
@@ -520,6 +534,8 @@ body {
         grid-gap: 10px 20px;
         margin: 10px 0;
         padding: 0 0px;
+        display: none;
+
     }
 
 
@@ -528,6 +544,8 @@ body {
         font-size: 9px;
         font-weight: bold;
         margin-right: 20%;
+        display: none;
+
     }
 
     .print .content .left .skills .bars .bar span1 { 
@@ -539,6 +557,8 @@ body {
         margin-top: 5px;
         border-radius: 10px;
         position: relative;
+        display: none;
+
     }
     
     .bar span1::before { 
@@ -551,6 +571,8 @@ body {
         top: 0%;
         left: 0px;
         border-radius: 10px;
+        display: none;
+
     }
     
     
@@ -563,6 +585,8 @@ body {
         margin-top: 5px;
         border-radius: 10px;
         position: relative;
+        display: none;
+
     }
     
     .bar span2::before { 
@@ -575,6 +599,8 @@ body {
         top: 0%;
         left: 0px;
         border-radius: 10px;
+        display: none;
+
     }
     
     .print .content .left .skills .bars .bar span3 { 
@@ -586,6 +612,8 @@ body {
         margin-top: 5px;
         border-radius: 10px;
         position: relative;
+        display: none;
+
     }
     
     .bar span3::before { 
@@ -598,6 +626,8 @@ body {
         top: 0%;
         left: 0px;
         border-radius: 10px;
+        display: none;
+
     }
     
     
@@ -611,6 +641,8 @@ body {
         margin-top: 5px;
         border-radius: 10px;
         position: relative;
+        display: none;
+
     }
     
     .bar span4::before { 
@@ -623,6 +655,8 @@ body {
         top: 0%;
         left: 0px;
         border-radius: 10px;
+        display: none;
+
     }
     
     .print .content .left .skills .bars .bar span5 { 
@@ -634,6 +668,8 @@ body {
         margin-top: 5px;
         border-radius: 10px;
         position: relative;
+        display: none;
+
     }
     
     .bar span5::before { 
@@ -646,6 +682,8 @@ body {
         top: 0%;
         left: 0px;
         border-radius: 10px;
+        display: none;
+
     }
     
     .print .content .left .skills .bars .bar span6 { 
@@ -658,6 +696,8 @@ body {
         border-radius: 10px;
         position: relative;
         align-items: center;
+        display: none;
+
     }
     
     .bar span6::before { 
@@ -671,6 +711,8 @@ body {
         left: 0px;
         /* --transform: translate(-50%); */
         border-radius: 10px;
+        display: none;
+
     }
 
     .print .content .left .abilities h1 {
@@ -678,6 +720,8 @@ body {
         font-size: 15px;
         font-weight: normal;
         margin: 20px 0;
+        display: none;
+
     
     }
     
@@ -685,6 +729,8 @@ body {
     
         font-size: 12px;
         margin: 5px 0;
+        display: none;
+
     
     }
     
@@ -694,11 +740,108 @@ body {
         margin-left: 0;
         margin-right: 0;
         padding: 5px 0;
+        display: none;
+
 
     }
-    
-    
 
+    body {
+        background-size: 1000%;
+      }
+    
+      
+    .print .content .right {
+        width: 100%;
+        flex: 0.9;
+        padding: 10px;
+    }
+
+    .print .right .about .fa-user {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .print .right .work .fa-suitcase-rolling {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .print .right .education .fa-book {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .print .content .right h1{
+
+        font-size: 20px;
+        font-weight: normal;
+        margin: 20px 5px;
+    }
+
+    .print .content .right .about  h1{
+
+        margin: 10px 0px 0px 0px;
+    }
+
+    .print .content .right span{
+
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .print .content .right p {
+
+        padding-left: 20px;
+        text-align: left;
+        font-size: 15px;
+        margin-top: 10px;
+
+    }
+
+    .group {
+        margin: 10px 0;
+        padding: 5px;
+    }
+
+    .print .content .right .work .group h3 {
+
+        font-size: 18px;
+        padding-left: 20px;
+
+    }
+
+    .print .content .right .work .group h4 {
+
+        display: none;
+
+    }
+
+    .print .content .right .work .group span{
+
+        display: none;
+
+    }
+
+    .print .content .right .education{
+        margin-top: 30;
+    }
+
+
+    .print .content .right .education .edu-group h4{
+        padding-left: 15px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .print .content .right .education .edu-group span{
+        display: none;
+    }
+
+    .print .content .right .education .edu-group p { 
+
+        padding-left: 15px;
+        font-size: 15px;
+    }
 
   }
   
